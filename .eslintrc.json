@@ -12,5 +12,7 @@
     "sourceType": "module"
   },
   "plugins": ["react"],
-  "rules": {}
+  "rules": {},
+  "ignorePatterns": ["webpack.config.js", "public/*"],
+  "root": true
 }
