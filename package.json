@@ -10,7 +10,7 @@
     "build:dev": "npm run build -- --watch --mode=development",
     "build": "webpack",
     "lint": "./node_modules/.bin/eslint $(pwd)/. --fix",
-    "format:client": "prettier --write --single-quote --semi \"client/**/*.jsx\"",
+    "format:client": "prettier --write --single-quote --semi \"client/**/*.{js,jsx}\"",
     "format:server": "prettier --write --single-quote --semi \"server/**/*.js\"",
     "format": "npm run format:server && npm run format:client",
     "prepare": "husky install && npx husky-init"
