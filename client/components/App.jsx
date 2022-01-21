@@ -3,6 +3,7 @@
 import React, { Component } from 'react';
 import WelcomeScreen from './WelcomeScreen';
 import AboutPage from './AboutPage';
+import ProjectPage from './ProjectPage';
 
 class App extends Component {
   render() {
@@ -10,6 +11,7 @@ class App extends Component {
       <div id="app-container">
         <WelcomeScreen />
         <AboutPage />
+        <ProjectPage />
       </div>
     );
   }
