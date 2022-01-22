@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 import WelcomeScreen from './WelcomeScreen';
 import AboutPage from './AboutPage';
 import ProjectPage from './ProjectPage';
+import ContactPage from './ContactPage';
 
 class App extends Component {
   render() {
@@ -12,6 +13,7 @@ class App extends Component {
         <WelcomeScreen />
         <AboutPage />
         <ProjectPage />
+        <ContactPage />
       </div>
     );
   }

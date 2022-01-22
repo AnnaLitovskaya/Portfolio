@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 
 class ContactPage extends Component {
   constructor() {
@@ -14,13 +15,22 @@ class ContactPage extends Component {
     this.onMessageChange = this.onMessageChange.bind(this);
   }
 
-  handleSubmit() {}
+  async handleSubmit(event) {
+    event.preventDefault();
+    await axios.post('/send', this.state);
+  }
 
-  onNameChange() {}
+  onNameChange(event) {
+    this.setState({ name: event.target.value });
+  }
 
-  onEmailChange() {}
+  onEmailChange(event) {
+    this.setState({ email: event.target.value });
+  }
 
-  onMessageChange() {}
+  onMessageChange(event) {
+    this.setState({ message: event.target.value });
+  }
 
   render() {
     const { name, email, message } = this.state;
