@@ -13,11 +13,19 @@ class ContactPage extends Component {
     this.onNameChange = this.onNameChange.bind(this);
     this.onEmailChange = this.onEmailChange.bind(this);
     this.onMessageChange = this.onMessageChange.bind(this);
+    this.resetForm = this.resetForm.bind(this);
   }
 
   async handleSubmit(event) {
     event.preventDefault();
-    await axios.post('/send', this.state);
+    await axios.post('/send', this.state).then((response) => {
+      if (response.data.status === 'success') {
+        console.log('Message Sent.');
+        this.resetForm();
+      } else {
+        console.log('Message failed to send.');
+      }
+    });
   }
 
   onNameChange(event) {
@@ -30,6 +38,10 @@ class ContactPage extends Component {
 
   onMessageChange(event) {
     this.setState({ message: event.target.value });
+  }
+
+  resetForm() {
+    this.setState({ name: '', email: '', message: '' });
   }
 
   render() {
