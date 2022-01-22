@@ -1,12 +1,12 @@
 import React from 'react';
 
-function WelcomeScreen() {
+function WelcomePage() {
   return (
-    <div id="welcome-screen-text">
+    <section className="app-screen" id="welcome-page-text">
       Hello there! My name is Anna Litovskaya. I am an aspiring Fullstack Web
       Developer.
-    </div>
+    </section>
   );
 }
 
-export default WelcomeScreen;
+export default WelcomePage;

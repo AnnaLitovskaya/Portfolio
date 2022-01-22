@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import React, { Component } from 'react';
 import axios from 'axios';
 
@@ -20,9 +21,11 @@ class ContactPage extends Component {
     event.preventDefault();
     await axios.post('/send', this.state).then((response) => {
       if (response.data.status === 'success') {
+        // change to success dialog
         console.log('Message Sent.');
         this.resetForm();
       } else {
+        // change to failed dialog
         console.log('Message failed to send.');
       }
     });
@@ -47,7 +50,7 @@ class ContactPage extends Component {
   render() {
     const { name, email, message } = this.state;
     return (
-      <section id="contact-page-container">
+      <section className="app-screen" id="contact-page-container">
         <div id="contact-form-container">
           <form id="contact-form" onSubmit={this.handleSubmit} method="POST">
             <div className="form-group">

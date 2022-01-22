@@ -1,3 +1,19 @@
-@import url('./styles/WelcomeScreen.css');
+@import url('./styles/App.css');
+@import url('./styles/WelcomePage.css');
 @import url('./styles/AboutPage.css');
 @import url('./styles/ProjectPage.css');
+@import url('./styles/ContactPage.css');
+
+html {
+  height: 400%;
+}
+
+body {
+  margin: 0;
+}
+
+body,
+#root,
+#app-container {
+  height: 100%;
+}

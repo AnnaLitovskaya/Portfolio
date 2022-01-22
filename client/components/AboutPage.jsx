@@ -2,7 +2,7 @@ import React from 'react';
 
 function AboutPage() {
   return (
-    <section id="about-page-container">
+    <section className="app-screen" id="about-page-container">
       <div id="about-page-text">
         My background is in mechanical engineering and industrial design. I have
         been a CNC machine programmer for 7 years before making the radical

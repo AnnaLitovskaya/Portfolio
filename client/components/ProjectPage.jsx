@@ -2,7 +2,7 @@ import React from 'react';
 
 function ProjectPage() {
   return (
-    <section id="project-page-container">
+    <section className="app-screen" id="project-page-container">
       <div className="project-container">
         <header className="project-title">E-Commerce Website - NO CAP</header>
         <img className="project-images" alt="No-Cap" />

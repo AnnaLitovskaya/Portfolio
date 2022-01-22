@@ -1,22 +1,18 @@
-/* eslint-disable react/prefer-stateless-function */
-
-import React, { Component } from 'react';
-import WelcomeScreen from './WelcomeScreen';
+import React from 'react';
+import WelcomePage from './WelcomePage';
 import AboutPage from './AboutPage';
 import ProjectPage from './ProjectPage';
 import ContactPage from './ContactPage';
 
-class App extends Component {
-  render() {
-    return (
-      <div id="app-container">
-        <WelcomeScreen />
-        <AboutPage />
-        <ProjectPage />
-        <ContactPage />
-      </div>
-    );
-  }
+function App() {
+  return (
+    <div id="app-container">
+      <WelcomePage />
+      <AboutPage />
+      <ProjectPage />
+      <ContactPage />
+    </div>
+  );
 }
 
 export default App;
