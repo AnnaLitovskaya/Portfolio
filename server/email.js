@@ -2,16 +2,18 @@
 /* eslint-disable no-console */
 const { Router } = require('express');
 const nodemailer = require('nodemailer');
-require('dotenv').config();
-const { USER, PASS } = require('../config');
 
 const router = Router();
 
+require('dotenv').config();
+
 const transport = {
-  service: 'gmail',
+  host: 'smtp.gmail.com',
+  port: 465,
+  secure: true,
   auth: {
-    user: USER,
-    pass: PASS,
+    user: process.env.EMAIL,
+    pass: process.env.PASSWORD,
   },
 };
 
@@ -31,7 +33,7 @@ router.post('/send', (req, res, next) => {
 
   const mail = {
     from: name,
-    to: USER,
+    to: process.env.EMAIL,
     subject: 'New Message From Portfolio Contact Form',
     text: content,
   };
