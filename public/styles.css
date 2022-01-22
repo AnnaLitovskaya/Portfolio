@@ -4,16 +4,17 @@
 @import url('./styles/ProjectPage.css');
 @import url('./styles/ContactPage.css');
 
-html {
-  height: 400%;
-}
-
 body {
   margin: 0;
 }
 
+html,
 body,
 #root,
 #app-container {
   height: 100%;
+}
+
+#root {
+  overflow-y: hidden;
 }

@@ -1,9 +1,10 @@
 #app-container {
   scroll-snap-type: y mandatory;
+  overflow-y: scroll;
 }
 
 .app-screen {
-  border: 10px black solid;
-  height: 25%;
-  /* scroll-snap-align: center; */
+  border: 1px black solid;
+  height: 100%;
+  scroll-snap-align: start;
 }
