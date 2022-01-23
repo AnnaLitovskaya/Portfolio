@@ -3,7 +3,6 @@
 }
 
 #welcome-page-text {
-  font-family: 'Azeret Mono', monospace;
   display: flex;
   flex-direction: column;
   height: 100%;

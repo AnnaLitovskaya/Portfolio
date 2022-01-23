@@ -12,6 +12,7 @@ function AboutPage() {
         printer, you can catch me hiking in the mountains or attempting to climb
         a large rock.
       </div>
+      <img alt="Me" />
     </section>
   );
 }

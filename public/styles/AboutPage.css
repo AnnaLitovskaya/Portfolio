@@ -1,3 +1,17 @@
 #about-page-container {
   background-color: #b56576;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+#about-page-text {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#about-page-container img {
+  align-self: center;
+  margin-top: 5%;
 }
