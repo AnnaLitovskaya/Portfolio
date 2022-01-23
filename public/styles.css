@@ -3,15 +3,18 @@
 @import url('./styles/AboutPage.css');
 @import url('./styles/ProjectPage.css');
 @import url('./styles/ContactPage.css');
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;700&display=swap');
 
 body {
   margin: 0;
+  color: #283044;
 }
 
 html,
 body,
 #root,
-#app-container {
+#app-container,
+.app-screen {
   height: 100%;
 }
 
