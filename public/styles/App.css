@@ -1,8 +1,12 @@
-#app-container {
+#page-container {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
 }
 
 .app-screen {
   scroll-snap-align: center;
+}
+
+#app-container {
+  display: flex;
 }
