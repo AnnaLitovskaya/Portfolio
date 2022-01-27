@@ -9,15 +9,15 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      pageLocation: 0,
+      // pageLocation: 0,
     };
     this.onScroll = this.onScroll.bind(this);
   }
 
-  onScroll() {
-    const currLocation = document.querySelector('#page-container').scrollTop;
-    this.setState({ pageLocation: currLocation });
-  }
+  // onScroll() {
+  //   const currLocation = document.querySelector('#page-container').scrollTop;
+  //   this.setState({ pageLocation: currLocation });
+  // }
 
   render() {
     return (

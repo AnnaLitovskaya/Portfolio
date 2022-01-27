@@ -5,25 +5,25 @@ class NavBar extends Component {
   constructor() {
     super();
     this.state = {
-      pageLocation: '',
+      // pageLocation: '',
     };
     this.onClick = this.onClick.bind(this);
   }
 
-  componentDidUpdate(prevProps, prevState) {
-    console.log(document.querySelector('#page-container').scrollTop);
-    if (
-      prevState.pageLocation !==
-      document.querySelector('#page-container').scrollTop
-    ) {
-      this.onClick();
-    }
-  }
+  // componentDidUpdate(prevProps, prevState) {
+  //   console.log(document.querySelector('#page-container').scrollTop);
+  //   if (
+  //     prevState.pageLocation !==
+  //     document.querySelector('#page-container').scrollTop
+  //   ) {
+  //     this.onClick();
+  //   }
+  // }
 
-  onClick() {
-    const currLocation = document.querySelector('#page-container').scrollTop;
-    this.setState({ pageLocation: currLocation });
-  }
+  // onClick() {
+  //   const currLocation = document.querySelector('#page-container').scrollTop;
+  //   this.setState({ pageLocation: currLocation });
+  // }
 
   render() {
     return (
