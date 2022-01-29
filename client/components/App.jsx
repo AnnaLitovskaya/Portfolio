@@ -14,10 +14,10 @@ class App extends Component {
     this.onScroll = this.onScroll.bind(this);
   }
 
-  // onScroll() {
-  //   const currLocation = document.querySelector('#page-container').scrollTop;
-  //   this.setState({ pageLocation: currLocation });
-  // }
+  onScroll() {
+    const currLocation = document.querySelector('#page-container').scrollTop;
+    this.setState({ pageLocation: currLocation });
+  }
 
   render() {
     return (
