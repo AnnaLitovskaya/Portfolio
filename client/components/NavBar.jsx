@@ -1,36 +1,57 @@
 /* eslint-disable no-console */
-import React, { useState } from 'react';
+import React from 'react';
 
 function NavBar() {
-  const [currLocation, setCurrLocation] = useState(0);
-
-  const onClick = () => {
-    // setCurrLocation(document.querySelector('#page-container').scrollTop);
-    window.scrollTo(821, 821);
+  const onClick = (page) => {
+    switch (page) {
+      case 'about':
+        document.getElementById('about-page-container').scrollIntoView();
+        break;
+      case 'project':
+        document.getElementById('project-page-container').scrollIntoView();
+        break;
+      case 'contact':
+        document.getElementById('contact-page-container').scrollIntoView();
+        break;
+      default:
+        document.getElementById('welcome-page-container').scrollIntoView();
+    }
   };
 
   return (
-    <nav id="navbar" onScroll={onClick}>
-      {/* <a className="page-selected" href="#welcome-page-container"> */}
-      <button type="button" onClick={onClick}>
+    <nav id="navbar">
+      <button
+        type="button"
+        onClick={() => {
+          onClick('welcome');
+        }}
+      >
         Welcome
       </button>
-      {/* </a> */}
-      {/* <a className="page-selected" href="#about-page-container"> */}
-      <button type="button" onClick={onClick}>
+      <button
+        type="button"
+        onClick={() => {
+          onClick('about');
+        }}
+      >
         About
       </button>
-      {/* </a> */}
-      {/* <a className="page-selected" href="#project-page-container"> */}
-      <button type="button" onClick={onClick}>
+      <button
+        type="button"
+        onClick={() => {
+          onClick('project');
+        }}
+      >
         Projects
       </button>
-      {/* </a> */}
-      {/* <a className="page-selected" href="#contact-page-container"> */}
-      <button type="button" onClick={onClick}>
+      <button
+        type="button"
+        onClick={() => {
+          onClick('contact');
+        }}
+      >
         Contact
       </button>
-      {/* </a> */}
     </nav>
   );
 }
