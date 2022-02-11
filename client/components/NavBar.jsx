@@ -20,6 +20,7 @@ function NavBar() {
 
   return (
     <nav id="navbar">
+      <img src="public/photos/Logo.png" alt="Logo" />
       <button
         type="button"
         onClick={() => {

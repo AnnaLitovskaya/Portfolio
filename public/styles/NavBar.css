@@ -2,9 +2,35 @@ nav {
   display: flex;
   flex-direction: column;
   position: absolute;
+  height: 100%;
+  align-self: center;
+  width: 25%;
+  justify-content: space-around;
+  /* opacity: 0.8; */
+  background-color: #ee6c4d;
+}
+
+nav button {
+  justify-content: stretch;
+  align-self: center;
+  width: 75%;
+  height: 15%;
+  border-radius: 40px;
+  /* background-image: url('../photos/PurpleTexture.jpg'); */
+  border: solid 2px #3d5a80;
+  color: #e0fbfc;
+  background-color: #3d5a80;
+  font-weight: 700;
+  font-size: 250%;
+}
+
+/* nav {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
   height: 70%;
   align-self: center;
-  width: 12%;
+  width: 100%;
   justify-content: space-around;
   opacity: 0.8;
 }
@@ -18,4 +44,4 @@ nav button {
   border: solid 2px rgba(31, 3, 31, 0.5);
   color: rgb(241, 191, 241);
   font-weight: 700;
-}
+} */
