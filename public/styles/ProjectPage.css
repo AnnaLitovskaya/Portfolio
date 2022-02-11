@@ -1,6 +1,18 @@
 #project-page-container {
-  background-color: #ebf5ee;
+  background-color: #293241;
 }
-#project-page-container {
-  background-color: #e56b6f;
+
+.project-container {
+  margin-left: 30%;
+  display: flex;
+  flex-direction: row;
+  /* color: #ee6c4d; */
+}
+
+.project-box {
+  background-color: #3d5a80;
+}
+
+.project-box img {
+  width: 50%;
 }
