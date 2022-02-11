@@ -1,6 +1,6 @@
 #welcome-page-container {
-  /* background-color: #6d597a; */
   background-color: #293241;
+  color: #ee6c4d;
 }
 
 #welcome-page-text {
@@ -8,18 +8,16 @@
   flex-direction: column;
   height: 100%;
   justify-content: center;
-  margin-left: 15%;
+  margin-left: 30%;
 }
 
 #welcome-page-text span:nth-child(1) {
   font-size: 100px;
   font-weight: 700;
+  text-shadow: 5px 5px black;
 }
 
 #welcome-page-text span:nth-child(2) {
   font-size: 70px;
-}
-
-#welcome-page-text span:nth-child(3) {
-  font-size: 50px;
+  text-shadow: 2px 2px black;
 }

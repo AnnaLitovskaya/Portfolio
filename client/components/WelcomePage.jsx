@@ -5,7 +5,7 @@ function WelcomePage() {
     <section className="app-screen" id="welcome-page-container">
       <div id="welcome-page-text">
         <span>Anna Litovskaya.</span>
-        <span>Full Stack Web Developer currently based in New York City.</span>
+        <span>Full Stack Web Developer based in New York City.</span>
       </div>
     </section>
   );
