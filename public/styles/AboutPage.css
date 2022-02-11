@@ -1,5 +1,6 @@
 #about-page-container {
-  background-color: #b56576;
+  /* background-color: #b56576; */
+  background-color: #293241;
   display: flex;
   flex-direction: column;
   height: 100%;

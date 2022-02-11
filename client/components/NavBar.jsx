@@ -20,15 +20,18 @@ function NavBar() {
 
   return (
     <nav id="navbar">
-      <img src="public/photos/Logo.png" alt="Logo" />
-      <button
-        type="button"
+      <div
+        role="button"
         onClick={() => {
           onClick('welcome');
         }}
+        onKeyPress={() => {
+          onClick('welcome');
+        }}
+        tabIndex={0}
       >
-        Welcome
-      </button>
+        <img src="public/photos/Logo.png" alt="Logo" />
+      </div>
       <button
         type="button"
         onClick={() => {
