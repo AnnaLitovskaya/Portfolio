@@ -38,7 +38,8 @@ function ProjectPage() {
             onKeyDown={handleOpenFundit}
           >
             <header className="project-title">
-              Finance Management Application - FUNDIT
+              <span>FUNDIT</span>
+              <span>Finance Management Application</span>
             </header>
             <img
               className="project-images"
@@ -59,11 +60,7 @@ function ProjectPage() {
           >
             <Fade in={openFundit}>
               <Box sx={style} className="project-modal">
-                <Typography
-                  id="transition-modal-title"
-                  variant="h6"
-                  component="h2"
-                >
+                <Typography className="bold-text" variant="h5" component="h2">
                   Finance Management Application - FUNDIT
                 </Typography>
                 <img
@@ -81,9 +78,9 @@ function ProjectPage() {
                   linking their bank account with Plaid.
                 </span>
                 <span>
-                  Technologies used: Node, Express, React, Redux, Postgresql,
-                  Sequelize, Stripe, Plaid, Passport, Puppeteer, Firebase,
-                  Chart.js
+                  <span className="bold-text">Technologies used: </span>
+                  Node, Express, React, Redux, Postgresql, Sequelize, Stripe,
+                  Plaid, Passport, Puppeteer, Firebase, Chart.js
                 </span>
                 <div className="demo-links">
                   <a href=" https://fundit-web.herokuapp.com/#/">
@@ -108,7 +105,8 @@ function ProjectPage() {
             onKeyDown={handleOpenNoCap}
           >
             <header className="project-title">
-              E-Commerce Website - NO CAP
+              <span>NO CAP</span>
+              <span>E-Commerce Website</span>
             </header>
             <img
               className="project-images"
@@ -129,11 +127,7 @@ function ProjectPage() {
           >
             <Fade in={openNoCap}>
               <Box sx={style} className="project-modal">
-                <Typography
-                  id="transition-modal-title"
-                  variant="h6"
-                  component="h2"
-                >
+                <Typography className="bold-text" variant="h5" component="h2">
                   E-Commerce Website - NO CAP
                 </Typography>
                 <img
@@ -146,8 +140,8 @@ function ProjectPage() {
                   two weeks.
                 </span>
                 <span>
-                  Technologies used: Node, Express, React, Redux, Postgresql,
-                  Sequelize
+                  <span className="bold-text">Technologies used: </span>
+                  Node, Express, React, Redux, Postgresql, Sequelize
                 </span>
                 <div className="demo-links">
                   <a href="https://nocap-demo.herokuapp.com/">
