@@ -46,6 +46,8 @@
     "prettier-eslint-cli": "^5.0.1"
   },
   "dependencies": {
+    "@emotion/styled": "^11.6.0",
+    "@mui/material": "^5.4.1",
     "axios": "^0.25.0",
     "css-loader": "^6.5.1",
     "dotenv": "^14.2.0",

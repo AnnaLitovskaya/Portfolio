@@ -17,8 +17,8 @@ function AboutPage() {
           fundamentals including data structures and algorithms.
         </span>
         <span>
-          When I'm not coding, I'm making widgets on my 3D printer, hiking,
-          reading, playing music, or eating a burrito.
+          When I&apos;m not coding, I&apos;m making widgets on my 3D printer,
+          hiking, reading, playing music, or eating a burrito.
         </span>
       </div>
       <img alt="Me" src="public/photos/Me.jpeg" />
