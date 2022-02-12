@@ -1,4 +1,5 @@
-/* eslint-disable no-console */
+/* eslint-disable operator-linebreak */
+/* eslint-disable object-curly-newline */
 import React, { Component } from 'react';
 import axios from 'axios';
 import Box from '@mui/material/Box';
@@ -29,14 +30,10 @@ class ContactPage extends Component {
     event.preventDefault();
     await axios.post('/send', this.state).then((response) => {
       if (response.data.status === 'success') {
-        // change to success dialog
         this.successModal();
-        console.log('Message Sent.');
         this.resetForm();
       } else {
-        // change to failed dialog
         this.failModal();
-        console.log('Message failed to send.');
       }
     });
   }
@@ -81,6 +78,7 @@ class ContactPage extends Component {
       boxShadow: 24,
       p: 4,
     };
+
     const { name, email, message, failModalOpen, successModalOpen } =
       this.state;
     return (

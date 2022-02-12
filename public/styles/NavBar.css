@@ -47,3 +47,40 @@ nav div img {
   flex-direction: column;
   justify-content: space-around;
 }
+
+#hamburger-navbar {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  nav {
+    flex-direction: row;
+    height: 13%;
+    align-self: flex-start;
+    width: 100%;
+  }
+
+  nav button {
+    width: 25%;
+    height: 60%;
+    font-size: 2.5vw;
+  }
+
+  #nav-buttons {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .logo {
+    width: auto;
+  }
+}
+
+@media (max-width: 850px) {
+  .logo {
+    display: none;
+  }
+  #nav-buttons button {
+    font-size: 3.5vw;
+  }
+}
