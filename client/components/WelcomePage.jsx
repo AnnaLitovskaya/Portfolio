@@ -6,6 +6,7 @@ function WelcomePage() {
       <div id="welcome-page-text">
         <span>Anna Litovskaya.</span>
         <span>Full Stack Web Developer based in New York City.</span>
+        <img alt="Me" src="public/photos/Me.jpeg" />
       </div>
     </section>
   );

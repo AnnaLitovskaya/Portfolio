@@ -21,3 +21,34 @@
   font-size: 70px;
   text-shadow: 2px 2px black;
 }
+
+#welcome-page-container img {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  #welcome-page-text {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 5vw;
+  }
+}
+
+@media (max-width: 600px) {
+  #welcome-page-text span:nth-child(1) {
+    font-size: 50px;
+  }
+
+  #welcome-page-text span:nth-child(2) {
+    font-size: 30px;
+  }
+
+  #welcome-page-container img {
+    display: inline;
+    align-self: center;
+    max-height: 30%;
+    margin-top: 10%;
+    box-shadow: black 5px 5px;
+    border-radius: 10px;
+  }
+}

@@ -19,48 +19,46 @@ function NavBar() {
   };
 
   return (
-    <div id="navbar-container">
-      <nav id="navbar">
-        <div
-          role="button"
+    <nav id="navbar">
+      <div
+        role="button"
+        onClick={() => {
+          onClick('welcome');
+        }}
+        onKeyPress={() => {
+          onClick('welcome');
+        }}
+        tabIndex={0}
+      >
+        <img src="public/photos/Logo.png" alt="Logo" className="logo" />
+      </div>
+      <div id="nav-buttons">
+        <button
+          type="button"
           onClick={() => {
-            onClick('welcome');
+            onClick('about');
           }}
-          onKeyPress={() => {
-            onClick('welcome');
-          }}
-          tabIndex={0}
         >
-          <img src="public/photos/Logo.png" alt="Logo" className="logo" />
-        </div>
-        <div id="nav-buttons">
-          <button
-            type="button"
-            onClick={() => {
-              onClick('about');
-            }}
-          >
-            About
-          </button>
-          <button
-            type="button"
-            onClick={() => {
-              onClick('project');
-            }}
-          >
-            Projects
-          </button>
-          <button
-            type="button"
-            onClick={() => {
-              onClick('contact');
-            }}
-          >
-            Contact
-          </button>
-        </div>
-      </nav>
-    </div>
+          About
+        </button>
+        <button
+          type="button"
+          onClick={() => {
+            onClick('project');
+          }}
+        >
+          Projects
+        </button>
+        <button
+          type="button"
+          onClick={() => {
+            onClick('contact');
+          }}
+        >
+          Contact
+        </button>
+      </div>
+    </nav>
   );
 }
 
