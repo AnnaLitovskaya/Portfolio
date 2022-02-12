@@ -32,30 +32,32 @@ function NavBar() {
       >
         <img src="public/photos/Logo.png" alt="Logo" />
       </div>
-      <button
-        type="button"
-        onClick={() => {
-          onClick('about');
-        }}
-      >
-        About
-      </button>
-      <button
-        type="button"
-        onClick={() => {
-          onClick('project');
-        }}
-      >
-        Projects
-      </button>
-      <button
-        type="button"
-        onClick={() => {
-          onClick('contact');
-        }}
-      >
-        Contact
-      </button>
+      <div id="nav-buttons">
+        <button
+          type="button"
+          onClick={() => {
+            onClick('about');
+          }}
+        >
+          About
+        </button>
+        <button
+          type="button"
+          onClick={() => {
+            onClick('project');
+          }}
+        >
+          Projects
+        </button>
+        <button
+          type="button"
+          onClick={() => {
+            onClick('contact');
+          }}
+        >
+          Contact
+        </button>
+      </div>
     </nav>
   );
 }
