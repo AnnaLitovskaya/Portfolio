@@ -61,21 +61,23 @@ function ProjectPage() {
             <Fade in={openFundit}>
               <Box sx={style} className="project-modal">
                 <Typography className="bold-text" variant="h5" component="h2">
-                  Finance Management Application - FUNDIT
+                  FUNDIT
                 </Typography>
                 <img
-                  className="project-images"
+                  className="project-images modal-image"
                   alt="FundIt"
                   src="public/photos/FundIt.png"
                 />
-                <span>
+                <span id="project-description">
                   FUNDIT is a family web-app for tracking chores and allowances.
                   The app aims to create a child user experience of financial
                   autonomy. Kids can earn money and fund items for themselves to
-                  help develop responsible money habits. FUNDIT issues a unique
-                  virtual credit card to each child user through Stripe. Parents
-                  have the ability to pay off balances through ACH charges by
-                  linking their bank account with Plaid.
+                  help develop responsible money habits.
+                </span>
+                <span id="minimize">
+                  FUNDIT issues a unique virtual credit card to each child user
+                  through Stripe. Parents have the ability to pay off balances
+                  through ACH charges by linking their bank account with Plaid.
                 </span>
                 <span>
                   <span className="bold-text">Technologies used: </span>
@@ -128,10 +130,10 @@ function ProjectPage() {
             <Fade in={openNoCap}>
               <Box sx={style} className="project-modal">
                 <Typography className="bold-text" variant="h5" component="h2">
-                  E-Commerce Website - NO CAP
+                  NO CAP
                 </Typography>
                 <img
-                  className="project-images"
+                  className="project-images modal-image"
                   alt="No-Cap"
                   src="public/photos/No-Cap.png"
                 />
