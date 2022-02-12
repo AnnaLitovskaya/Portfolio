@@ -39,3 +39,31 @@
   font-size: 20px;
   text-shadow: 2px 2px black;
 }
+
+@media (max-width: 1000px) {
+  #about-page-text {
+    margin-left: 5%;
+    margin-top: 10%;
+  }
+  #about-page-container img {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  #about-page-container img {
+    display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  #about-page-text span:nth-child(1) {
+    font-size: 30px;
+  }
+
+  #about-page-text span:nth-child(2),
+  #about-page-text span:nth-child(3),
+  #about-page-text span:nth-child(4) {
+    font-size: 15px;
+  }
+}
